@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%" fill="none">
+  <!-- Warm Ivory Background -->
+  <rect width="600" height="750" fill="#F6F5EE"/>
+  
+  <defs>
+    <radialGradient id="celebrationGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#EFECE0" stop-opacity="0.3"/>
+    </radialGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C158"/>
+      <stop offset="50%" stop-color="#C5A038"/>
+      <stop offset="100%" stop-color="#9C7820"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <rect width="600" height="750" fill="url(#celebrationGlow)"/>
+
+  <!-- Elegant Inner Double Border -->
+  <rect x="22" y="22" width="556" height="706" stroke="#18191B" stroke-width="1" stroke-opacity="0.25"/>
+  <rect x="28" y="28" width="544" height="694" stroke="#18191B" stroke-width="0.5" stroke-opacity="0.12"/>
+
+  <!-- Decorative Corner Starbursts -->
+  <text x="36" y="46" font-family="'Space Grotesk', serif" font-size="14" fill="#18191B" opacity="0.6">✦</text>
+  <text x="552" y="46" font-family="'Space Grotesk', serif" font-size="14" fill="#18191B" opacity="0.6" text-anchor="end">✦</text>
+  <text x="36" y="708" font-family="'Space Grotesk', serif" font-size="14" fill="#18191B" opacity="0.6">✦</text>
+  <text x="552" y="708" font-family="'Space Grotesk', serif" font-size="14" fill="#18191B" opacity="0.6" text-anchor="end">✦</text>
+
+  <!-- Header Text -->
+  <text x="300" y="65" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="10" font-weight="700" letter-spacing="3.5" fill="#18191B" text-anchor="middle" opacity="0.75">SPECIAL BIRTHDAY PORTRAIT</text>
+  <text x="300" y="84" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="9" font-weight="500" letter-spacing="2.5" fill="#C5A038" text-anchor="middle">★ CHAPTER 26 CELEBRATION ★</text>
+  
+  <line x1="48" y1="102" x2="552" y2="102" stroke="#18191B" stroke-width="0.75" stroke-opacity="0.15"/>
+
+  <!-- Celestial Constellation Rings -->
+  <circle cx="300" cy="320" r="150" stroke="#18191B" stroke-width="0.6" stroke-dasharray="3 4" stroke-opacity="0.25"/>
+  <circle cx="300" cy="320" r="115" stroke="#C5A038" stroke-width="0.8" stroke-opacity="0.4"/>
+
+  <!-- Minimalist High-Fashion Silhouette of Nadia -->
+  <circle cx="300" cy="275" r="46" fill="#18191B" opacity="0.9"/>
+  <path d="M 220 405 C 220 345, 255 330, 300 330 C 345 330, 380 345, 380 405 Z" fill="#18191B" opacity="0.9"/>
+
+  <!-- Star Embellishments -->
+  <text x="180" y="240" font-family="serif" font-size="16" fill="#C5A038" opacity="0.8">✦</text>
+  <text x="410" y="250" font-family="serif" font-size="20" fill="#C5A038" opacity="0.9">✧</text>
+  <text x="200" y="400" font-family="serif" font-size="14" fill="#C5A038" opacity="0.7">✧</text>
+  <text x="390" y="390" font-family="serif" font-size="16" fill="#C5A038" opacity="0.8">✦</text>
+
+  <!-- Name Ribbon Badge -->
+  <rect x="170" y="455" width="260" height="32" fill="#18191B" rx="2"/>
+  <text x="300" y="476" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="3" fill="#FAF9F5" text-anchor="middle">NADIA CINDY NOVITA SARI</text>
+
+  <!-- Birthday Sub-badge -->
+  <text x="300" y="525" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#18191B" text-anchor="middle">CELEBRATING 26 YEARS</text>
+  <text x="300" y="548" font-family="-apple-system, sans-serif" font-size="12" font-style="italic" fill="#52525B" text-anchor="middle">Dedicated to Mbakyu on her special day</text>
+
+  <line x1="48" y1="640" x2="552" y2="640" stroke="#18191B" stroke-width="0.75" stroke-opacity="0.15"/>
+
+  <!-- Footer Info -->
+  <text x="48" y="675" font-family="'Space Grotesk', monospace" font-size="10" letter-spacing="2" fill="#71717A">01 NOVEMBER 2026</text>
+  <text x="552" y="675" font-family="'Space Grotesk', monospace" font-size="10" letter-spacing="2" fill="#00C853" text-anchor="end">● A SPECIAL DAY</text>
+</svg>

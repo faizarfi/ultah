@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper-bg: #FAF8F2;
+  --paper-edge: #E6E3D8;
+  --ink-primary: #0D0E10;
+  --ink-secondary: #3F424A;
+  --ink-tertiary: #6E727D;
+  --electric-accent: #00FF77;
+  --gold-accent: #D4AF37;
+  --gold-glow: #F59E0B;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #DDD9CC;
+  color: var(--ink-primary);
+  min-height: 100vh;
+}
+
+/* Studio Exhibition Backdrop (Area luar card) */
+.studio-backdrop {
+  background-color: #DFDBD0;
+  background-image: 
+    radial-gradient(circle at 50% 22%, rgba(212, 175, 55, 0.18) 0%, rgba(0, 255, 119, 0.07) 35%, transparent 72%),
+    linear-gradient(to right, rgba(13, 14, 16, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 14, 16, 0.035) 1px, transparent 1px);
+  background-size: 100% 100%, 48px 48px, 48px 48px;
+}
+
+/* Paper Grain Texture */
+.paper-grain {
+  background-image: 
+    radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to right, rgba(0, 0, 0, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
+  background-size: 20px 20px, 40px 40px, 40px 40px;
+}
+
+/* Paper tactile edge shadow */
+.a4-sheet {
+  background: #FAF8F2;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.03),
+    0 10px 30px rgba(0, 0, 0, 0.07),
+    0 30px 70px rgba(0, 0, 0, 0.1),
+    0 50px 110px -20px rgba(0, 0, 0, 0.16);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+/* Celebratory Shimmer & Glow Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.85;
+    box-shadow: 0 0 6px rgba(0, 255, 119, 0.6);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 16px rgba(0, 255, 119, 0.95);
+  }
+}
+
+.animate-electric-dot {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+/* Candle flame flicker animation */
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.85));
+  }
+  25% {
+    transform: scale(1.08, 0.95) rotate(1.5deg);
+    filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.95));
+  }
+  50% {
+    transform: scale(0.96, 1.05) rotate(-1deg);
+    filter: drop-shadow(0 0 7px rgba(245, 158, 11, 0.8));
+  }
+  75% {
+    transform: scale(1.04, 0.98) rotate(1deg);
+    filter: drop-shadow(0 0 11px rgba(245, 158, 11, 0.9));
+  }
+}
+
+.animate-candle-flame {
+  animation: flameFlicker 1.8s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Sparkle Floating Animation */
+@keyframes sparkleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-8px) rotate(10deg) scale(1.2);
+    opacity: 1;
+  }
+}
+
+.animate-sparkle-float {
+  animation: sparkleFloat 3.5s ease-in-out infinite;
+}
+
+/* Vertical Text Orientation */
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Crop marks */
+.crop-tl {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 14px;
+  height: 14px;
+  border-top: 1.5px solid rgba(13, 14, 16, 0.35);
+  border-left: 1.5px solid rgba(13, 14, 16, 0.35);
+}
+
+.crop-tr {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 14px;
+  height: 14px;
+  border-top: 1.5px solid rgba(13, 14, 16, 0.35);
+  border-right: 1.5px solid rgba(13, 14, 16, 0.35);
+}
+
+.crop-bl {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 1.5px solid rgba(13, 14, 16, 0.35);
+  border-left: 1.5px solid rgba(13, 14, 16, 0.35);
+}
+
+.crop-br {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 1.5px solid rgba(13, 14, 16, 0.35);
+  border-right: 1.5px solid rgba(13, 14, 16, 0.35);
+}
+
+/* Staggered Fade Up */
+@keyframes editorialFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-entry {
+  animation: editorialFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.fade-in-delay-1 {
+  animation: editorialFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: editorialFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-3 {
+  animation: editorialFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.45s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-4 {
+  animation: editorialFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+  opacity: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #DDD9CC;
+}
+::-webkit-scrollbar-thumb {
+  background: #BCB8AA;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #959185;
+}
+
+/* Print Optimization */
+@media print {
+  body {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .a4-sheet {
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+    page-break-inside: avoid;
+  }
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+}
